@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387793.jpg&fm=jpg'); /* Özel resmin adresi */
+    background-size: cover; /* Resmi tam ekran boyutunda yayınla */
+    background-repeat: no-repeat; /* Tekrar etmesini engelle */
+    color: #fff; /* Beyaz metin rengi */
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: linear-gradient(90deg, #3a3a3a, #232629); /* Modern gradyan arka plan */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 36px; /* Daha büyük başlık metni */
+    margin: 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px; /* Daha büyük açıklama metni */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Koyu gri içerik arka plan rengi */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Saydamlık değeri (0.0 ile 1.0 arasında) */
+}
+
+
+.video-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #444; /* Koyu gri video arka plan rengi */
+    border: 1px solid #555; /* Koyu gri video sınır rengi */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+}
+
+.video {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.video-info {
+    padding: 20px;
+}
+
+
+.social-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #55acee;
+    padding: 10px 10px; /* Daha büyük boyut */
+    border-radius: 10px; /* Yuvarlak köşeler */
+    font-size: 16px; /* Daha büyük metin boyutu */
+    margin: 4 20px;
+    font-weight: bold;
+}
+
+.social-button.twitter {
+    background-color: #55acee;
+}
+
+.social-button.instagram {
+    background-color: #e4405f;
+}
+
+.social-button:hover {
+    background-color: #0077b5;
+}
+
+.social-button.instagram:hover {
+    background-color: #ed4956;
+}
+
+
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; /* Daha büyük buton */
+    background-color: #0077b5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px; /* Daha yuvarlak köşeler */
+    font-size: 16px; /* Daha büyük metin */
+    transition: background-color 0.3s ease;
+    display: flex; /* İçerikleri dikey hizalamak için flex kullanın */
+    justify-content: center; /* İçerikleri yatayda ortala */
+    align-items: center; /* İçerikleri dikeyde ortala */
+}
+
+.download-button:hover {
+    background-color: #055c99;
+}
