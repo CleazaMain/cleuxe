@@ -1,16 +1,17 @@
+/* Genel stiller */
+
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387793.jpg&fm=jpg'); /* Özel resmin adresi */
-    background-size: cover; /* Resmi tam ekran boyutunda yayınla */
-    background-repeat: no-repeat; /* Tekrar etmesini engelle */
-    color: #fff; /* Beyaz metin rengi */
+    background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387793.jpg&fm=jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
-
 header {
-    background: linear-gradient(90deg, #3a3a3a, #232629); /* Modern gradyan arka plan */
+    background: linear-gradient(90deg, #3a3a3a, #232629);
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -19,21 +20,20 @@ header {
 }
 
 h1 {
-    font-size: 36px; /* Daha büyük başlık metni */
+    font-size: 36px;
     margin: 0;
     font-weight: bold;
 }
 
 p {
-    font-size: 18px; /* Daha büyük açıklama metni */
+    font-size: 18px;
 }
-
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #333; /* Koyu gri içerik arka plan rengi */
+    background-color: #333;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     opacity: 0.8;
@@ -42,16 +42,32 @@ p {
 .video-list {
     display: flex;
     flex-wrap: wrap;
-    /* Saydamlık değeri (0.0 ile 1.0 arasında) */
 }
 
+/* Mobil cihazlar için stiller */
+
+@media (max-width: 768px) {
+    .video-item {
+        width: calc(50% - 20px); /* Mobil cihazlarda iki sıra */
+    }
+
+    .download-button,
+    .social-button {
+        padding: 8px 16px; /* Daha küçük butonlar */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-item {
+        width: 100%; /* Mobil cihazlarda tek sıra */
+    }
+}
 
 .video-item {
-    width: calc(33.33% - 20px);
     margin: 10px;
     box-sizing: border-box;
-    background-color: #444; /* Koyu gri video arka plan rengi */
-    border: 1px solid #555; /* Koyu gri video sınır rengi */
+    background-color: #444;
+    border: 1px solid #555;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -71,7 +87,6 @@ p {
     padding: 20px;
 }
 
-
 .social-buttons {
     text-align: center;
     margin-top: 10px;
@@ -81,9 +96,9 @@ p {
     text-decoration: none;
     color: #fff;
     background-color: #55acee;
-    padding: 10px 10px; /* Daha büyük boyut */
-    border-radius: 10px; /* Yuvarlak köşeler */
-    font-size: 16px; /* Daha büyük metin boyutu */
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 16px;
     margin: 4 20px;
     font-weight: bold;
 }
@@ -104,20 +119,19 @@ p {
     background-color: #ed4956;
 }
 
-
 .download-button {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px; /* Daha büyük buton */
+    padding: 10px 20px;
     background-color: #0077b5;
     color: #fff;
     text-decoration: none;
-    border-radius: 10px; /* Daha yuvarlak köşeler */
-    font-size: 16px; /* Daha büyük metin */
+    border-radius: 10px;
+    font-size: 16px;
     transition: background-color 0.3s ease;
-    display: flex; /* İçerikleri dikey hizalamak için flex kullanın */
-    justify-content: center; /* İçerikleri yatayda ortala */
-    align-items: center; /* İçerikleri dikeyde ortala */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .download-button:hover {
